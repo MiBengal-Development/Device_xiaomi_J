@@ -26,6 +26,10 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 BOARD_BUILD_PRODUCT_IMAGE := true
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service-juice
+
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
