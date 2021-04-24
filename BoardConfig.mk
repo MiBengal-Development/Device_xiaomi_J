@@ -64,6 +64,9 @@ TARGET_USES_HWC2 := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Power
+TARGET_USES_INTERACTION_BOOST := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     console=ttyMSM0,115200n8 \
