@@ -42,6 +42,9 @@ USE_XML_AUDIO_POLICY_CONF := 1
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+# Charger Mode
+BOARD_CHARGER_ENABLE_SUSPEND := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     console=ttyMSM0,115200n8 \
