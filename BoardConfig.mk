@@ -58,6 +58,8 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 # Charger Mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
 
 # Display
 TARGET_USES_HWC2 := true
