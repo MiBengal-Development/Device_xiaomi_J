@@ -67,6 +67,10 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system
 
+# Vulkan
+PRODUCT_PACKAGES += \
+    libvulkan
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl \
