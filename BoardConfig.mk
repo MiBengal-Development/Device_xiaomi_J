@@ -51,6 +51,7 @@ include vendor/qcom/opensource/commonsys-intf/bluetooth/bt-commonsys-intf-board.
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+TARGET_USE_QTI_BT_STACK := true
 
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
