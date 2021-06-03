@@ -17,6 +17,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     debug.sf.latch_unsignaled=0
 
+# Blurs
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.supports_background_blur=0 \
+    persist.sys.sf.disable_blurs=1 \
+    ro.sf.blurs_are_expensive=0
+
 # Power-saving props
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.use_data_netmgrd=true \
