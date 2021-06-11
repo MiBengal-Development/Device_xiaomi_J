@@ -120,8 +120,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
--include $(LOCAL_PATH)/system_prop.mk
--include $(LOCAL_PATH)/product_prop.mk
 
 # Vendor Overlay
 PRODUCT_COPY_FILES += \
