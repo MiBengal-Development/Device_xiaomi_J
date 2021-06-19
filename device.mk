@@ -190,6 +190,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsensorndkbridge \
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service.xiaomi_bengal \
+    vendor.qti.hardware.vibrator-impl
+
+PRODUCT_PACKAGES += \
+   vibrator.default
+
 # Telephony
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti \
