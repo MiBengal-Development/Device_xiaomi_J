@@ -118,6 +118,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_juice
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power.stats@1.0-service.mock-juice \
+    android.hardware.power.stats@1.0-service-juice.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/power/android.hardware.power.stats@1.0-service-mock.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/etc/vintf/manifest/android.hardware.power.stats@1.0-service-mock.xml
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
