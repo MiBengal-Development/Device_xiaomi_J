@@ -1,0 +1,8 @@
+on boot
+    start vendor.power-qti
+    stop vendor.power
+
+service vendor.power-qti /system/product/vendor_overlay/30/bin/hw/android.hardware.power-service-qti
+    class hal
+    user system
+    group system
