@@ -30,8 +30,6 @@ LOCAL_SRC_FILES := \
     Power.cpp \
     main.cpp
 
-LOCAL_CFLAGS += -DTAP_TO_WAKE_NODE="/sys/touchpanel/double_tap"
-
 include $(BUILD_EXECUTABLE)
 
 include $(CLEAR_VARS)
