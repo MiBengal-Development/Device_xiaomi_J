@@ -1,6 +1,0 @@
-# power_stats service
-type power_stats, coredomain, domain;
-type power_stats_exec, system_file_type, exec_type, file_type;
-
-init_daemon_domain(power_stats)
-

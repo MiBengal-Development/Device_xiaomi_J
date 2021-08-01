@@ -126,12 +126,9 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti-juice \
-    android.hardware.power-service-qti-juice.rc \
-    android.hardware.power.stats@1.0-service.mock-juice \
-    android.hardware.power.stats@1.0-service-juice.rc
+    android.hardware.power-service-qti-juice.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/power/android.hardware.power.stats@1.0-service-mock.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/etc/vintf/manifest/android.hardware.power.stats@1.0-service-mock.xml \
     $(LOCAL_PATH)/power_qti/power.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/etc/vintf/manifest/power.xml \
     $(LOCAL_PATH)/power_qti/powerhint.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/etc/powerhint.xml
 
