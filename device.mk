@@ -58,8 +58,9 @@ PRODUCT_PACKAGES += \
     libaudio-resampler
 
 # Bluetooth
- PRODUCT_PACKAGES += \
-    BluetoothQti
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Google Camera
 PRODUCT_PACKAGES += \
@@ -87,7 +88,6 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     libsensorndkbridge \
-    android.hardware.sensors@2.0-service.multihal
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -114,18 +114,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-focal.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-focal.kl \
     $(LOCAL_PATH)/keylayout/uinput-cdfinger.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-cdfinger.kl
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_juice
-
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti-juice \
-    android.hardware.power-service-qti-juice.rc
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/power_qti/power.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/etc/vintf/manifest/power.xml \
-    $(LOCAL_PATH)/power_qti/powerhint.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/etc/powerhint.xml
+    android.hardware.power-service-qti
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -139,16 +130,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor-overlay/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION))
 
-PRODUCT_PACKAGES += \
-    AospFrameworkResOverlay \
-    AospWifiResOverlay \
-    GmsTelecommOverlay \
-    GmsTelephonyOverlay \
-    CarrierConfigResCommon \
-    CellBroadcastReceiverResCommon \
-    FrameworksResCommon \
-    FrameworksResTarget \
-    SystemUIResCommon \
-    TelecommResCommon \
-    TelephonyResCommon \
-    WifiResCommon
+#PRODUCT_PACKAGES += \
+#    AospFrameworkResOverlay \
+#    AospWifiResOverlay \
+#    GmsTelecommOverlay \
+#    GmsTelephonyOverlay \
+#    CarrierConfigResCommon \
+#   CellBroadcastReceiverResCommon \
+#    FrameworksResCommon \
+#    FrameworksResTarget \
+#    SystemUIResCommon \
+#    TelecommResCommon \
+#    TelephonyResCommon \
+#    WifiResCommon
