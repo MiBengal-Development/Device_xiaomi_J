@@ -13,11 +13,6 @@ ro.surface_flinger.use_color_management=true
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 
-# Blurs
-ro.surface_flinger.supports_background_blur=0
-persist.sys.sf.disable_blurs=1
-ro.sf.blurs_are_expensive=0
-
 # Power-saving props
 ro.vendor.use_data_netmgrd=true
 ro.vold.umsdirtyratio=20
