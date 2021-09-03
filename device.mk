@@ -159,6 +159,20 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# QMI
+PRODUCT_PACKAGES += \
+    libjson \
+    libqti_vndfwk_detect \
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti \
+    libvndfwk_detect_jni.qti.vendor
+
+# RIL
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
+    librmnetctl \
+    libxml2
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
