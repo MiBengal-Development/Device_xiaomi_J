@@ -420,7 +420,21 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
-    android.hidl.base@1.0.vendor
+    android.hidl.base@1.0.vendor \
+    libbase \
+    libbase.vendor \
+    libhardware \
+    libhardware.vendor \
+    libhidlbase \
+    libhidlbase.vendor \
+    libhidltransport \
+    libhidltransport.vendor\
+    liblog \
+    liblog.vendor \
+    libhwbinder \
+    libhwbinder.vendor \
+    libutils \
+    libutils.vendor
 
 # Input
 PRODUCT_COPY_FILES += \
