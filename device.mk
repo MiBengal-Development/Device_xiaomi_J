@@ -249,6 +249,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
+# Thermal
+PRODUCT_PACKAGES += \
+   android.hardware.thermal@1.0 \
+   android.hardware.thermal@2.0 \
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey \
