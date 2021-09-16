@@ -235,6 +235,13 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.xiaomi_bengal
+
+PRODUCT_PACKAGES += \
+    lights.bengal
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
